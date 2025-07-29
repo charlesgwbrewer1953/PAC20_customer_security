@@ -1,3 +1,11 @@
+# This Shiny-based User Management System enables secure handling of user data 
+# for political campaign organizations across multiple jurisdictions. It supports 
+# GDPR compliance, including consent tracking, data export, and deletion features. 
+# The system includes role-based access control, audit logging, and political party 
+# color-coding for clarity. It also provides tools for retention management and 
+# system settings, preparing for cloud migration.
+
+
 # User Management System - GDPR Compliant
 # Version: 0.0.3
 # Load required libraries
@@ -583,7 +591,13 @@ server <- function(input, output, session) {
     updateCheckboxInput(session, "gdpr_consent", value = FALSE)
     updateCheckboxInput(session, "email_verified", value = FALSE)
     
-    showNotification("User created successfully", type = "success")
+    # Show success alert
+    shinyWidgets::sendSweetAlert(
+      session = session,
+      title = "Success!",
+      text = "User created successfully",
+      type = "success"
+    )
   })
   
   # Audit log table
