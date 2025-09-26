@@ -1,0 +1,12 @@
+name: PAC20_customer_security
+title: PAC20_customer_security
+username: namax
+account: namax
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15318670
+bundleId: 10847175
+url: https://namax.shinyapps.io/PAC20_customer_security/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

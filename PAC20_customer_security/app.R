@@ -248,10 +248,14 @@ delete_user_data <- function(user_id, reason) {
 ui <- dashboardPage(
   dashboardHeader(
     title = tagList(
-      "User Management System",
-      tags$small(style = "font-style: italic; font-size: 12px; margin-left: 10px;", paste("Version", VERSION))
+      div(
+        style = "font-family: 'Roboto', sans-serif; font-weight: 100; color: #b4b4b4;",
+        "demographiKon"
+      )
     )
   ),
+  
+
   
   dashboardSidebar(
     sidebarMenu(
